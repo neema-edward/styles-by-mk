@@ -1,15 +1,13 @@
 export default function Gallery() {
   // Update this array with your actual image names
   const images = [
-    "/images/style1.jpg",
-    "/images/style2.jpg",
-    "/images/style3.jpg",
-    "/images/style4.jpg",
-    "/images/style5.jpg",
-    "/images/style6.jpg",
-    // "/images/style7.jpeg",
-    // "/images/style8.jpeg",
-  ];
+    "/styles-by-mk/images/style1.jpg",
+    "/styles-by-mk/images/style2.jpg",
+    "/styles-by-mk/images/style3.jpg",
+    "/styles-by-mk/images/style4.jpg",
+    "/styles-by-mk/images/style5.jpg",
+    "/styles-by-mk/images/style6.jpg",
+];
 
   return (
     <section className="py-20 bg-brown-900 text-white">

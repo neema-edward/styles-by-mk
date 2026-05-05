@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Scissors } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -9,7 +8,7 @@ export default function Navbar() {
         {/* Logo + Brand */}
         <Link to="/" className="flex items-center gap-3">
           <img 
-            src="/images/logo.jpg" 
+            src={`${import.meta.env.BASE_URL}images/logo.jpg`}
             alt="Styles by MK Logo" 
             className="h-14 w-auto object-contain"
           />

@@ -8,6 +8,12 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script>
+  const redirect = new URLSearchParams(window.location.search).get('redirect');
+  if (redirect) {
+    window.history.replaceState(null, '', '/styles-by-mk' + redirect);
+  }
+</script>
+    <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
