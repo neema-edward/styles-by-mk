@@ -21,7 +21,6 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section */}
       <section className="relative h-screen flex items-center overflow-hidden">
 
         {/* Slideshow Images */}
@@ -31,7 +30,7 @@ export default function Home() {
             className="absolute inset-0 bg-center transition-opacity duration-1000"
             style={{
               backgroundImage: `url(${src})`,
-              backgroundSize: '90%',
+              backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
               opacity: i === current ? 1 : 0,
             }}
@@ -42,27 +41,29 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60" />
 
         {/* Content */}
-        <div className="relative z-10 max-w-5xl mx-auto text-center px-6 w-full">
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+        <div className="relative z-10 w-full text-center px-6">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-white mb-4 tracking-tight leading-tight">
             STYLES BY MK
           </h1>
-          <p className="text-3xl text-gold mb-10">Premium Barbershop • Nairobi</p>
+          <p className="text-lg sm:text-2xl md:text-3xl text-gold mb-8">
+            Premium Barbershop • Nairobi
+          </p>
 
           <button
             onClick={() => setModalOpen(true)}
-            className="bg-gold hover:bg-amber-300 text-brown-900 text-2xl font-semibold px-12 py-6 rounded-full transition-all duration-300"
+            className="bg-gold hover:bg-amber-300 text-brown-900 text-base sm:text-xl md:text-2xl font-semibold px-8 sm:px-12 py-4 sm:py-6 rounded-full transition-all duration-300"
           >
             Book Your Appointment
           </button>
 
           {/* Dots */}
-          <div className="flex justify-center gap-2 mt-10">
+          <div className="flex justify-center gap-2 mt-8">
             {slides.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  i === current ? 'bg-gold w-6' : 'bg-white/50'
+                className={`h-3 rounded-full transition-all duration-300 ${
+                  i === current ? 'bg-gold w-6' : 'bg-white/50 w-3'
                 }`}
               />
             ))}
