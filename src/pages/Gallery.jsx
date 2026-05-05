@@ -1,14 +1,14 @@
 export default function Gallery() {
   // Update this array with your actual image names
   const images = [
-    "/images/style1.jpeg",
-    "/images/style2.jpeg",
-    "/images/style3.jpeg",
-    "/images/style4.jpeg",
-    "/images/style5.jpeg",
-    "/images/style6.jpeg",
-    "/images/style7.jpeg",
-    "/images/style8.jpeg",
+    "/images/style1.jpg",
+    "/images/style2.jpg",
+    "/images/style3.jpg",
+    "/images/style4.jpg",
+    "/images/style5.jpg",
+    "/images/style6.jpg",
+    // "/images/style7.jpeg",
+    // "/images/style8.jpeg",
   ];
 
   return (
@@ -16,7 +16,7 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold mb-4">Our Work</h1>
-          <p className="text-gold text-2xl">@stylesbymk</p>
+          <p className="text-gold text-2xl">stylesbymk</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -35,7 +35,7 @@ export default function Gallery() {
         </div>
 
         <p className="text-center text-gold mt-12 text-lg">
-          Follow us on TikTok @stylesbymk for more styles
+          Follow us on TikTok @stylesby_mk & Instagram @_stylebymk for more styles
         </p>
       </div>
     </section>
