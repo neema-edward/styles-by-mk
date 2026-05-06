@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      const path = window.location.pathname.replace('/styles-by-mk', '');
+      const search = window.location.search;
+      window.location.replace(
+        '/styles-by-mk/?redirect=' + encodeURIComponent(path + search)
+      );
+    </script>
+  </head>
+</html>
